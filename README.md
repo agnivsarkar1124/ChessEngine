@@ -87,6 +87,7 @@ hypothetical position evaluation
 check detection during simulated moves
 
 🖥️ How to Run
+
 javac *.java
 java ChessGUI
 
