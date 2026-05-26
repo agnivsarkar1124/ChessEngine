@@ -1,9 +1,9 @@
-♟️ Chess Engine (Java)
+### Chess Engine (Java)
 
 A Java-based chess engine with a graphical interface (ChessGUI), implementing full rule-based move validation, game state management, check/checkmate detection, and a heuristic evaluation function for position scoring.
 Built as a personal CS project exploring game engines and state management in Java.
 
-🚀 ## Features
+## Features
 
 Complete chess rule implementation for all pieces
 Pawn, Knight, Bishop, Rook, Queen, King
@@ -22,17 +22,17 @@ Move simulation with reversible state updates for validation and evaluation
 Algebraic notation generation for moves
 Graphical user interface for gameplay (ChessGUI)
 
-🧠 ### Architecture Overview
+### Architecture Overview
 
 The project is split into two main components:
 
-🎮 ## ChessGUI (Interface Layer)
+## ChessGUI (Interface Layer)
 
 Handles user interaction
 Displays the board and pieces
 Sends move requests to the game engine
 
-⚙️ ## Game Engine (Core Logic)
+## Game Engine (Core Logic)
 
 Maintains full board state using an 8x8 Piece[][]
 Tracks active pieces using a List<Piece>
@@ -41,7 +41,7 @@ Computes game state (check, checkmate, stalemate)
 
 This separation ensures that the game logic is independent of the UI.
 
-🧩 ## Move Validation Pipeline
+## Move Validation Pipeline
 
 Each move is processed through multiple validation stages:
 
@@ -56,14 +56,14 @@ King safety check
 Simulates the move
 Rejects moves that leave the king in check
 
-♟️ ## Check & Game End Detection
+## Check & Game End Detection
 
 Check detection scans all opponent pieces to determine if any can legally attack the king
 Checkmate/stalemate is determined by:
 generating all legal moves
 verifying whether any move resolves check or produces a safe position
 
-🧠 ## Heuristic Evaluation Function
+## Heuristic Evaluation Function
 
 A custom evaluation function scores board positions using:
 
@@ -76,7 +76,7 @@ sacrifices and risk penalties
 
 This function provides a basic AI-style scoring mechanism for positions.
 
-🔁 ## Move Simulation System
+## Move Simulation System
 
 Moves are simulated using:
 
@@ -100,7 +100,7 @@ javac *.java
 java ChessGUI
 
 
-⚠️ ## Limitations
+## Limitations
 
 No minimax or deep search AI (heuristic evaluation only)
 No opening book or endgame database
