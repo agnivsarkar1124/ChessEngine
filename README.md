@@ -81,12 +81,12 @@ verifying whether any move resolves check or produces a safe position
 
 A custom evaluation function scores board positions using:
 
-Material balance (piece values)
-Positional advantage (centrality of pieces)
-Tactical factors:
-captures
-checks
-sacrifices and risk penalties
+Material balance (piece values)  
+Positional advantage (centrality of pieces)  
+Tactical factors:  
+captures  
+checks  
+sacrifices and risk penalties  
 
 This function provides a basic AI-style scoring mechanism for positions.
 
@@ -94,15 +94,15 @@ This function provides a basic AI-style scoring mechanism for positions.
 
 Moves are simulated using:
 
-Temporary board state updates
-Piece list updates
-Full rollback after evaluation
+Temporary board state updates  
+Piece list updates  
+Full rollback after evaluation  
 
 This allows:
 
-safe legality checking
-hypothetical position evaluation
-check detection during simulated moves
+Safe legality checking  
+Hypothetical position evaluation  
+Check detection during simulated moves  
 
 
 ## 🖥️ How to Run
