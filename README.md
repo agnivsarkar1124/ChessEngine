@@ -42,7 +42,7 @@ The project is split into two main components:
 
 ## ChessGUI (Interface Layer)
 
-Handles user interaction
+Handles user interaction\n
 Displays the board and pieces
 Sends move requests to the game engine
 
