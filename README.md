@@ -1,126 +1,71 @@
-### Chess Engine (Java)
+# Chess Engine (Java)
 
-A Java-based chess engine with a graphical interface (ChessGUI), implementing full rule-based move validation, game state management, check/checkmate detection, and a heuristic evaluation function for position scoring.
-Built as a personal CS project exploring game engines and state management in Java.
+A Java-based chess engine with a graphical interface (ChessGUI) implementing rule-based move validation, game state management, check/checkmate detection, and heuristic position evaluation. Built as a personal CS project exploring game engines, state simulation, and system design in Java.
+
+---
 
 ## Features
 
-Complete chess rule implementation for all pieces:
-Pawn, Knight, Bishop, Rook, Queen, King
+### Core Chess Logic
+- Full rule-based move generation for all standard pieces
+- Piece-specific movement rules with path obstruction checking
+- Turn enforcement and capture validation
+- Castling and pawn promotion (automatic queen promotion)
 
-Legal move generation with validation:
+### Game State Management
+- Check, checkmate, and stalemate detection
+- Full legal move validation ensuring king safety
+- Algebraic move notation generation
 
-Piece-specific movement rules
+### Heuristic Evaluation
+Custom position scoring based on:
+- Material balance (standard piece values)
+- Positional centrality
+- Tactical factors (captures, checks, sacrifices)
 
-Board boundary and path obstruction checks
+### Move Simulation System
+- Temporary board state simulation for move validation
+- Reversible state updates for safe evaluation
+- Used for legality checks and heuristic scoring
 
-Capturing rules and turn enforcement
+---
 
-Check, checkmate, and stalemate detection
+## Architecture
 
-Pawn promotion (automatic queen promotion)
+### ChessGUI (Interface Layer)
+- Handles user input and board rendering
+- Sends move requests to the game engine
 
-Castling with full rule validation
+### Game Engine (Core Logic)
+- Maintains board state using an 8×8 array
+- Tracks active pieces and game state
+- Enforces rules and validates all moves
+- Computes check and game-ending conditions
 
-Heuristic evaluation function for position scoring:
-
-Material values (pawn=1, knight/bishop=3, rook=5, queen=9)
-
-Positional centrality scoring
-
-Tactical incentives (captures, checks, sacrifices)
-
-Move simulation with reversible state updates for validation and evaluation
-
-Algebraic notation generation for moves
-
-Graphical user interface for gameplay (ChessGUI)
-
-### Architecture Overview
-
-The project is split into two main components:
-
-## ChessGUI (Interface Layer)
-
-Handles user interaction  
-Displays the board and pieces  
-Sends move requests to the game engine  
-
-## Game Engine (Core Logic)
-
-Maintains full board state using an 8x8 Piece 2D array  
-Tracks active pieces using a List<Piece>  
-Enforces all chess rules and validates moves  
-Computes game state (check, checkmate, stalemate)  
-
-This separation ensures that the game logic is independent of the UI.
+---
 
 ## Move Validation Pipeline
+Each move is validated through:
+1. Basic piece movement rules  
+2. Path obstruction checks  
+3. Turn enforcement  
+4. Capture legality  
+5. King safety validation  
+6. Move simulation and rollback if invalid  
 
-Each move is processed through multiple validation stages:
-
-Basic movement rules  
-Piece-specific legal moves  
-Path obstruction checks (sliding pieces)  
-Game rules  
-Turn enforcement  
-Preventing capture of same-color pieces  
-Special moves (castling, pawn promotion)  
-King safety check  
-Simulates the move  
-Rejects moves that leave the king in check  
-
-## Check & Game End Detection
-
-Check detection scans all opponent pieces to determine if any can legally attack the king
-Checkmate/stalemate is determined by:
-generating all legal moves
-verifying whether any move resolves check or produces a safe position
-
-## Heuristic Evaluation Function
-
-A custom evaluation function scores board positions using:
-
-Material balance (piece values)  
-Positional advantage (centrality of pieces)  
-Tactical factors:  
-captures  
-checks  
-sacrifices and risk penalties  
-
-This function provides a basic AI-style scoring mechanism for positions.
-
-## Move Simulation System
-
-Moves are simulated using:
-
-Temporary board state updates  
-Piece list updates  
-Full rollback after evaluation  
-
-This allows:
-
-Safe legality checking  
-Hypothetical position evaluation  
-Check detection during simulated moves  
-
-
-## 🖥️ How to Run
-
-### Compile
-javac *.java
-
-### Run
-java ChessGUI
-
+---
 
 ## Limitations
+- No minimax or deep search AI (heuristic evaluation only)
+- No en passant, underpromotion, or 50-move/repetition rules
+- Not optimized for high-performance search
 
-No minimax or deep search AI (heuristic evaluation only)
-No opening book or endgame database
-Console-based engine logic with GUI wrapper
-Not optimized for performance-intensive search
+---
 
+## How to Run
+
+```javac *.java
+java ChessGUI
 
 
 ## Assets / Attributions
