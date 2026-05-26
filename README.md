@@ -11,17 +11,29 @@ Pawn, Knight, Bishop, Rook, Queen, King
 Legal move generation with validation:
 
 Piece-specific movement rules
+
 Board boundary and path obstruction checks
+
 Capturing rules and turn enforcement
+
 Check, checkmate, and stalemate detection
+
 Pawn promotion (automatic queen promotion)
+
 Castling with full rule validation
+
 Heuristic evaluation function for position scoring:
+
 Material values (pawn=1, knight/bishop=3, rook=5, queen=9)
+
 Positional centrality scoring
+
 Tactical incentives (captures, checks, sacrifices)
+
 Move simulation with reversible state updates for validation and evaluation
+
 Algebraic notation generation for moves
+
 Graphical user interface for gameplay (ChessGUI)
 
 ### Architecture Overview
