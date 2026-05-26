@@ -163,7 +163,4 @@ https://commons.wikimedia.org/w/index.php?curid=20363786
 
 This project was built to explore:
 
-rule-based game engines
-state management and validation systems
-heuristic evaluation functions
-GUI integration with core logic separation
+rule-based game engines, state management and validation systems, heuristic evaluation functions, and GUI integration with core logic separation.
