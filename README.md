@@ -86,9 +86,13 @@ safe legality checking
 hypothetical position evaluation
 check detection during simulated moves
 
-🖥️ How to Run
 
+## 🖥️ How to Run
+
+### Compile
 javac *.java
+
+### Run
 java ChessGUI
 
 
