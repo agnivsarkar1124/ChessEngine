@@ -1136,7 +1136,7 @@ class Game {
 
 }
 
-public class Main {
+public class ChessEngine {
     public static void main(String[] args) {
         Game g = new Game();
         Scanner sc = new Scanner(System.in);
