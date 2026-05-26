@@ -42,16 +42,16 @@ The project is split into two main components:
 
 ## ChessGUI (Interface Layer)
 
-Handles user interaction\n
-Displays the board and pieces
-Sends move requests to the game engine
+Handles user interaction  
+Displays the board and pieces  
+Sends move requests to the game engine  
 
 ## Game Engine (Core Logic)
 
-Maintains full board state using an 8x8 Piece[][]
-Tracks active pieces using a List<Piece>
-Enforces all chess rules and validates moves
-Computes game state (check, checkmate, stalemate)
+Maintains full board state using an 8x8 Piece 2D array  
+Tracks active pieces using a List<Piece>  
+Enforces all chess rules and validates moves  
+Computes game state (check, checkmate, stalemate)  
 
 This separation ensures that the game logic is independent of the UI.
 
@@ -59,16 +59,16 @@ This separation ensures that the game logic is independent of the UI.
 
 Each move is processed through multiple validation stages:
 
-Basic movement rules
-Piece-specific legal moves
-Path obstruction checks (sliding pieces)
-Game rules
-Turn enforcement
-Preventing capture of same-color pieces
-Special moves (castling, pawn promotion)
-King safety check
-Simulates the move
-Rejects moves that leave the king in check
+Basic movement rules  
+Piece-specific legal moves  
+Path obstruction checks (sliding pieces)  
+Game rules  
+Turn enforcement  
+Preventing capture of same-color pieces  
+Special moves (castling, pawn promotion)  
+King safety check  
+Simulates the move  
+Rejects moves that leave the king in check  
 
 ## Check & Game End Detection
 
