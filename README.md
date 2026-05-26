@@ -5,9 +5,11 @@ Built as a personal CS project exploring game engines and state management in Ja
 
 ## Features
 
-Complete chess rule implementation for all pieces
+Complete chess rule implementation for all pieces:
 Pawn, Knight, Bishop, Rook, Queen, King
+
 Legal move generation with validation:
+
 Piece-specific movement rules
 Board boundary and path obstruction checks
 Capturing rules and turn enforcement
