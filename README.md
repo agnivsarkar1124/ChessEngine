@@ -122,31 +122,18 @@ Console-based engine logic with GUI wrapper
 Not optimized for performance-intensive search
 
 
-🖼️ Assets / Attributions
 
-Chess piece icons are created by Cburnett and licensed under CC BY-SA 3.0:
-
-https://commons.wikimedia.org/wiki/User:Cburnett
-https://creativecommons.org/licenses/by-sa/3.0/
-
-Original assets:
-
-https://commons.wikimedia.org/w/index.php?curid=20363775–20363786
-📌 Project Goal
-
-This project was built to explore:
-
-rule-based game engines
-state management and validation systems
-heuristic evaluation functions
-GUI integration with core logic separation
-Assets / Attributions
+## Assets / Attributions
 
 Chess piece icons used in this project are created by Cburnett and sourced from Wikimedia Commons under the CC BY-SA 3.0 license:
 
 Chess pieces (white/black):
 https://commons.wikimedia.org/wiki/User:Cburnett
 https://creativecommons.org/licenses/by-sa/3.0/
+
+Original assets:
+
+https://commons.wikimedia.org/w/index.php?curid=20363775–20363786
 
 Specific assets:
 
@@ -171,3 +158,12 @@ https://commons.wikimedia.org/w/index.php?curid=20363783
 https://commons.wikimedia.org/w/index.php?curid=20363784
 https://commons.wikimedia.org/w/index.php?curid=20363785
 https://commons.wikimedia.org/w/index.php?curid=20363786
+
+## Project Goal
+
+This project was built to explore:
+
+rule-based game engines
+state management and validation systems
+heuristic evaluation functions
+GUI integration with core logic separation
