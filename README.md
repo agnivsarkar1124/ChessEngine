@@ -64,8 +64,11 @@ Each move is validated through:
 
 ## How to Run
 
-```javac *.java
-java ChessGUI```
+### Compile
+javac *.java
+
+### Run
+java ChessGUI
 
 
 ## Assets / Attributions
